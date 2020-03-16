@@ -1,7 +1,7 @@
 function showCurrentTime(){
 
     var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var daysOfMonth = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
     
     var today = new Date();
     var day = today.getDay();
@@ -10,14 +10,30 @@ function showCurrentTime(){
     var min = today.getMinutes();
     var sec = today.getSeconds();
 
+    var curWeekDay = daysOfWeek[day]
+    var curMonth = monthsOfYear[month]
+
+    var amOrPM = hour >= 12 ? "PM" : "AM";
+
+
+    hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour);
+
     hour = formatDisplayTime(hour);
     min = formatDisplayTime(min);
     sec = formatDisplayTime(sec);
 
-    document.getElementById("clockDisplay").innerText = 
+    document.getElementById("dayOfWeekAndDate").innerText = 
+                curWeekDay + ", " +
+                curMonth + " " +
+                day;
+
+     document.getElementById("clockDisplay").innerText = 
                 hour + " : " +
                 min + " : " +
-                sec;
+                sec + " " +
+                amOrPM;
+                
+
     var displayTime = setTimeout(function(){ showCurrentTime() }, 1000);
 
 
