@@ -1,6 +1,7 @@
 
-// Run function first time
+
 window.onload = function() {
+    // Run function first time
     showCurrentTime(12);
     // Add click event listener for te button
     document.getElementById("btn24hr").addEventListener("click", changeTimeFormat);
@@ -12,7 +13,7 @@ function showCurrentTime(timeFormat){
     var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     // Fill Array to convert Day (Integer) to Day (String)
-    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']; 
+    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; 
 
     // Set variable for current Date/Time
     var today = new Date();   
@@ -70,13 +71,14 @@ function showCurrentTime(timeFormat){
 
     //var displayTime = setTimeout(function(){ showCurrentTime() }, 1000);
     //setTimeout(function(){ showCurrentTime() }, 1000);
-    setTimeout(showCurrentTime, 1000, (timeFormat > 12) ? 24 : 12);
+        setTimeout(showCurrentTime, 1000, (timeFormat > 12) ? 24 : 12);
 }
 
 
 
 function changeTimeFormat(){
-    var tF = 0
+    
+    var tf = 0;
     // run showCurrentTime() with appropriate argument
     // If time is currently PM, then we are in 12 hour mode, need to switch to 24 hour
     if (document.getElementById("amPmDisplay").Value = "PM") {
