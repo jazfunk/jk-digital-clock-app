@@ -6,19 +6,37 @@
   </head>
 
   <body>
-    <header><h1>My Digital Clock Goes Here</h1></header>
+    <header>
+        <h1>Digital Clock</h1>        
+    </header>
 
     <main>
-        <p>Put the clock parts here</p>
-        
-        <div id="dayOfWeekAndDate"></div>
-        <div id="clockDisplay"></div>
-    
-    
-    
+        <table class="mainTable">
+            <tr>
+                <td class="clockHourMin" rowspan = 2>
+                    <div id="clockDisplay"></div>
+                </td>
+                <td class="clockAmPm">
+                    <div id="amPmDisplay"></div>
+                </td>
+            </tr>
+                
+            <tr>
+                <td class="clockSeconds">
+                    <div id="secondsDisplay"></div>
+                </td>               
+            </tr>
+            <tr>
+                <td class="dayOfWeek" colspan = 2>
+                    <div id="dayOfWeekAndDate"></div>
+                </td>
+            </tr>
+        </table>
     </main>
 
-    <footer></footer>
+    <footer>
+        <h2>by Jeff King</h2>    
+    </footer>
 
     <script src="script.js"></script>
   </body>

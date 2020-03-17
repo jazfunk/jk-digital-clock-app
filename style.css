@@ -1,18 +1,54 @@
 body {
-    background-color: #ffffff; 
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333333; 
+    color: #f4f4f4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 
 main {
-    background-color: #000000;
+    background-color: #555555;
     color: #ffffff;
 }
 
-a {
-    color: blue;
+h1 {
+    font-size: 64px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
-    color: #000000
+h2 {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mainTable {
+    margin: 0 auto;
+    background-color: #f4f4f4;
+
+}
+.clockHourMin {
+    font-size: 58px;
+    text-align: center;
+    background-color: #222222;
+}
+
+.clockSeconds {
+    font-size: 22px;
+    text-align: center;
+    background-color: #444444;
+}
+
+.clockAmPm {
+    font-size: 18px;
+    text-align: center;
+    background-color: #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dayOfWeek {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #8f7d7d;
 }
