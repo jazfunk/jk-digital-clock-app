@@ -1,6 +1,6 @@
 body {
     background-color: #333333; 
-    color: #f4f4f4;
+    color: silver;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 0 auto;
@@ -34,7 +34,7 @@ h3 {
 }
 .mainTable {
     margin: 0 auto;
-    background-color: gainsboro;
+    background-color: silver;
     width: 350px;
 
 }
@@ -42,7 +42,7 @@ h3 {
     font-size: 68px;
     text-align: center;
     background-color: #222222;
-    color: aquamarine;
+    color: snow;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
