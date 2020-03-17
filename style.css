@@ -3,6 +3,7 @@ body {
     color: #f4f4f4;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    margin: 0 auto;
 }
 
 main {
@@ -11,44 +12,64 @@ main {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 56px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 h2 {
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 4px;
+    margin-bottom: 6px;
 }
 
+h3 {
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #888888;
+
+}
 .mainTable {
     margin: 0 auto;
-    background-color: #f4f4f4;
+    background-color: gainsboro;
+    width: 350px;
 
 }
 .clockHourMin {
-    font-size: 58px;
+    font-size: 68px;
     text-align: center;
     background-color: #222222;
+    color: aquamarine;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 75%;
 }
 
 .clockSeconds {
-    font-size: 22px;
-    text-align: center;
-    background-color: #444444;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 12px;
+    background-color: #666666;
 }
 
 .clockAmPm {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
-    background-color: #333333;
+    background-color: #555555;    
     padding-left: 10px;
     padding-right: 10px;
+    width: 25%;
 }
 
 .dayOfWeek {
     font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #8f7d7d;
+    background-color: #444444;
+    width: 100%;
 }

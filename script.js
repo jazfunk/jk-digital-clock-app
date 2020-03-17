@@ -49,7 +49,7 @@ function showCurrentTime(){
     document.getElementById("amPmDisplay").innerText = 
                 amOrPM;
     document.getElementById("secondsDisplay").innerText = 
-                ":" + sec;
+                ": " + sec;
 
 
                 
