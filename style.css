@@ -30,14 +30,14 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     color: #888888;
-
 }
+
 .mainTable {
     margin: 0 auto;
     background-color: silver;
     width: 350px;
-
 }
+
 .clockHourMin {
     font-size: 68px;
     text-align: center;
@@ -78,5 +78,4 @@ h3 {
     background-color: #333333;
     color: deepskyblue;
     width: 350px;
-
 }

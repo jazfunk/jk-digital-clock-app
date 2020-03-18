@@ -2,15 +2,24 @@
 // Global Time Format Value
 var tFormat = 12
 
-window.onload = function() {
+// Set Text to Display while loading
+document.getElementById("clockDisplay").innerText = ":";
+document.getElementById("dayOfWeekAndDate").innerText = "Loading...";
+document.getElementById("amPmDisplay").innerText = "--";
+document.getElementById("secondsDisplay").innerText = ":";
+
+// Initialize Button Text based on intializing <tFormat> to 12
+document.getElementById("btn24hr").value="Switch to 24-Hour Format"
+
+window.onload = function() {    
     // Set Timer and run function, with appropriate time format
-    setTimeout(showCurrentTime, 1000, (tFormat > 12) ? 24 : 12);
+    setTimeout(showCurrentTime, 1000);
 
     // Add click event listener for te button
     document.getElementById("btn24hr").addEventListener("click", changeTimeFormat);
 }
 
-function showCurrentTime(timeFormat){
+function showCurrentTime(){
     // Fill Array to convert Month (Integer) to Month (String)
     var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -63,17 +72,19 @@ function showCurrentTime(timeFormat){
     document.getElementById("secondsDisplay").innerText = 
                 ": " + sec;
 
-    setTimeout(showCurrentTime, 1000, (tFormat > 12) ? 24 : 12);
+    setTimeout(showCurrentTime, 1000);
 }
 
 function changeTimeFormat(){
     // Toggle 12/24
+    var btnText = ""
     if (tFormat == 12) {
         tFormat = 24;
+        btnText = "Switch to 12-Hour Format"
     } else {
         tFormat = 12;
+        btnText = "Switch to 24-Hour Format"
     }
+    // Set Button Text
+    document.getElementById("btn24hr").value = btnText   
 }
-
-
-
