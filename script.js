@@ -1,90 +1,54 @@
+let isMilitaryTime = false;
 
-// Global Time Format Value
-var tFormat = 12
+document.getElementById("btn24hr").value = isMilitaryTime === false
+    ? "Switch to 24-Hour Format" 
+    : "Switch to 12-Hour Format";
 
-// Set Text to Display while loading
-document.getElementById("clockDisplay").innerText = ":";
-document.getElementById("dayOfWeekAndDate").innerText = "Loading...";
-document.getElementById("amPmDisplay").innerText = "--";
-document.getElementById("secondsDisplay").innerText = ":";
-
-// Initialize Button Text based on intializing <tFormat> to 12
-document.getElementById("btn24hr").value="Switch to 24-Hour Format"
-
-window.onload = function() {    
-    // Set Timer and run function, with appropriate time format
-    setTimeout(showCurrentTime, 1000);
-
-    // Add click event listener for te button
-    document.getElementById("btn24hr").addEventListener("click", changeTimeFormat);
+window.onload = function() {
+  showCurrentTime();
+  setInterval(showCurrentTime, 1000);
+  document.getElementById("btn24hr").addEventListener("click", function(e) {
+    isMilitaryTime = !isMilitaryTime;
+    showCurrentTime();
+    document.getElementById("btn24hr").value = isMilitaryTime
+      ? "Switch to 12-Hour Format"
+      : "Switch to 24-Hour Format";
+  });
 }
 
 function showCurrentTime(){
-    // Fill Array to convert Month (Integer) to Month (String)
-    var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-    // Fill Array to convert Day (Integer) to Day (String)
-    var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; 
-    // Set variable for current Date/Time
-    var today = new Date();   
-
-    // Convert Day of Week (Integer) to Day of Week (String)
-    var day = today.getDay();
-    var strDay = daysOfWeek[day];
-
-    // Convert Month (Integer) to Month (String)
-    var month = today.getMonth();    
-    var strMonth = monthsOfYear[month];
-        
-    // Set Day of Month
-    var dayDate = today.getDate();
-
-    // Set hour variable
-    var hour = today.getHours();
-
-    // Format hour value
-    if (tFormat == 12) {
+    const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; 
+    const today = new Date();   
+    const day = daysOfWeek[today.getDay()];
+    const month = monthsOfYear[today.getMonth()];
+    const date = today.getDate();    
+    let hour = today.getHours();
+    if (isMilitaryTime === false) {
         hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12) : hour);
     } 
-    
-    // Add leading zero to hour, min, and sec, if necessary
-    hour = (hour < 10) ? "0" + hour : hour;
-    var min = today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
-    var sec = today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
-
-    // Determine Am/Pm
-    if (tFormat == 12) {
-        var amOrPM = today.getHours() >= 12 ? "PM" : "AM";
+    hour = addLeadingZero(hour);
+    const minutes = addLeadingZero(today.getMinutes());
+    const seconds = addLeadingZero(today.getSeconds());
+    if (isMilitaryTime === false) {
+        document.getElementById("am-pm-display").innerText = today.getHours() >= 12 ? "PM" : "AM";
     } else {
-        var amOrPM = "24";        
+      document.getElementById("am-pm-display").innerText = "24";
     }
-
-    // Set values for div element ID's
-    document.getElementById("dayOfWeekAndDate").innerText = 
-                strDay + ", " +
-                strMonth + " " +
-                dayDate;
-    document.getElementById("clockDisplay").innerText = 
-                hour + " : " +
-                min;
-    document.getElementById("amPmDisplay").innerText = 
-                amOrPM;
-    document.getElementById("secondsDisplay").innerText = 
-                ": " + sec;
-
-    setTimeout(showCurrentTime, 1000);
+    document.getElementById("day-of-week-and-date").innerText = `${day}, ${month} ${date}`;               
+    document.getElementById("clock-display").innerText = `${hour} : ${minutes}`;
+    document.getElementById("seconds-display").innerText =`: ${seconds}`;
 }
 
-function changeTimeFormat(){
-    // Toggle 12/24
-    var btnText = ""
-    if (tFormat == 12) {
-        tFormat = 24;
-        btnText = "Switch to 12-Hour Format"
-    } else {
-        tFormat = 12;
-        btnText = "Switch to 24-Hour Format"
-    }
-    // Set Button Text
-    document.getElementById("btn24hr").value = btnText   
+function addLeadingZero(time) {    
+    return time < 10 ? '0' + time : time;
 }
+
+
+
+
+
+
+
+
+

@@ -32,13 +32,13 @@ h3 {
     color: #888888;
 }
 
-.mainTable {
+.main-table {
     margin: 0 auto;
     background-color: silver;
     width: 350px;
 }
 
-.clockHourMin {
+.clock-hour-min {
     font-size: 68px;
     text-align: center;
     background-color: #222222;
@@ -50,14 +50,14 @@ h3 {
     width: 75%;
 }
 
-.clockSeconds {
+.clock-seconds {
     font-size: 40px;
     text-align: left;
     padding-left: 12px;
     background-color: #666666;
 }
 
-.clockAmPm {
+.clock-am-pm {
     font-size: 24px;
     text-align: center;
     background-color: #444444;    
@@ -66,7 +66,7 @@ h3 {
     width: 25%;
 }
 
-.dayOfWeek {
+.day-of-week {
     font-size: 26px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -74,7 +74,7 @@ h3 {
     width: 100%;
 }
 
-.myButtons {
+.my-buttons {
     background-color: #333333;
     color: deepskyblue;
     width: 350px;
