@@ -4,7 +4,7 @@ Digital clock, with running seconds, and 12/24 hour time formats.
 <br>
 
 ## GitHub Links
-App: [https://jazfunk.github.io/jk-to-do-app/](https://jazfunk.github.io/jk-to-do-app/)<br>
+App: [https://jazfunk.github.io/jk-digital-clock-app/](https://jazfunk.github.io/jk-digital-clock-app/)<br>
 Repository: [https://github.com/jazfunk/jk-to-do-app.git](https://github.com/jazfunk/jk-to-do-app.git)
 <br>
 <image src="images/clockApp_SS.png">
