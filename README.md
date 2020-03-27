@@ -1,6 +1,6 @@
 # JavaScript Digital Clock App
 <br>
-Digital clock, with running seconds, and 12/24 hour time formats.
+Digital clock with running seconds and 12/24 hour time formats, entirely written in pure JavaScript, HTML and CSS
 <br>
 
 ## GitHub Links
