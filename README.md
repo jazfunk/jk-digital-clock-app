@@ -1,17 +1,18 @@
 # JavaScript Digital Clock App
-<br>
-Digital clock with running seconds and 12/24 hour time formats, entirely written in pure JavaScript, HTML and CSS
-<br>
+Written entirely in pure JavaScript, HTML, and CSS, this digital clock web application provides full date and time display, including running seconds and 12/24 hour time formats.
 
-## GitHub Links
-App: [https://jazfunk.github.io/jk-digital-clock-app/](https://jazfunk.github.io/jk-digital-clock-app/)<br>
-Repository: [https://github.com/jazfunk/jk-to-do-app.git](https://github.com/jazfunk/jk-to-do-app.git)
+## Links
+[View Application](https://jazfunk.github.io/jk-digital-clock-app/)  
+[View Repository](https://github.com/jazfunk/jk-to-do-app.git)
+
+
+## Application Images
+![Digital Clock App Screenshot](images/clockApp_SS_12hr.png)  
+![Digital Clock App Screenshot](images/clockApp_SS_24hr.png)
 <br>
-<image src="images/clockApp_SS.png">
 
 ## Summary
-With many years of coding in various languages, this is my first formal mentorship program with assignment apps.  I spent the better part of two days writing most of the styling and functionality, then another day to develop the 24-hour format option
-
+With many years of *self-taught* coding experience in various languages, this is my first formal mentorship program with assignment applications.  I spent the better part of two days writing most of the styling and functionality, then another day to develop the 24-hour format option.  It was a valuable learning experience;  I was able to connect and understand on a deeper level, several logical concepts that I've known for a while, but didn't fully understand.
 
 ## Author
 * **Jeff King** - *Full Stack Software Developer* - [GitHub](https://github.com/jazfunk) | [LinkedIn](https://www.linkedin.com/in/jeffking222/)
