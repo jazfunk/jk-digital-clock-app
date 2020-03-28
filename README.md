@@ -6,10 +6,10 @@ Written entirely in pure JavaScript, HTML, and CSS, this digital clock web appli
 [View Repository](https://github.com/jazfunk/jk-to-do-app.git)
 
 ## Application Images
-<img src="images/clockApp_SS_12hr.png"><br>
-<img src="images/clockApp_SS_24hr.png"><br>
-![hourFormat_12](https://raw.githubusercontent.com/jazfunk/jk-digital-clock-app/master/images/clockApp_SS_12hr.PNG)<br>
-![hourFrmat_24](https://raw.githubusercontent.com/jazfunk/jk-digital-clock-app/master/images/clockApp_SS_24hr.PNG)<br>
+* **12 Hour Format**<br>
+![hourFormat_12](https://raw.githubusercontent.com/jazfunk/jk-digital-clock-app/master/images/clockApp_SS_12hr.PNG)<br><br>
+* **24 Hour Format**<br>
+![hourFrmat_24](https://raw.githubusercontent.com/jazfunk/jk-digital-clock-app/master/images/clockApp_SS_24hr.PNG)
 
 ## Summary
 With many years of *self-taught* coding experience in various languages, this is my first formal mentorship program with assignment applications.  I spent the better part of two days writing most of the styling and functionality, then another day to develop the 24-hour format option.  It was a valuable learning experience;  I was able to connect and understand on a deeper level, several logical concepts that I've known for a while, but didn't fully understand.
