@@ -3,7 +3,7 @@ Written entirely in pure JavaScript, HTML, and CSS, this digital clock web appli
 
 ## Links
 [View Application](https://jazfunk.github.io/jk-digital-clock-app/)  
-[View Repository](https://github.com/jazfunk/jk-to-do-app.git)
+[View Repository](https://github.com/jazfunk/jk-digital-clock-app.git)
 
 ## Application Images
 * **12 Hour Format**<br>
@@ -16,5 +16,3 @@ With many years of *self-taught* coding experience in various languages, this is
 
 ## Author
 * **Jeff King** - *Full Stack Software Developer* - [GitHub](https://github.com/jazfunk) | [LinkedIn](https://www.linkedin.com/in/jeffking222/)
-
-
