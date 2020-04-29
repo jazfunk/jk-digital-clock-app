@@ -15,4 +15,4 @@ Written entirely in pure JavaScript, HTML, and CSS, this digital clock web appli
 With many years of *self-taught* coding experience in various languages, this is my first formal mentorship program with assignment applications.  I spent the better part of two days writing most of the styling and functionality, then another day to develop the 24-hour format option.  It was a valuable learning experience;  I was able to connect and understand on a deeper level, several logical concepts that I've known for a while, but didn't fully understand.
 
 ## Author
-* **Jeff King** - *Full Stack Software Developer* - [GitHub](https://github.com/jazfunk) | [LinkedIn](https://www.linkedin.com/in/jeffking222/)
+* **Jeff King** - *Full Stack Software Developer* - [GitHub](https://github.com/jazfunk) | [LinkedIn](https://www.linkedin.com/in/jeffking222/) | [Website](https://jeff-king.net)
