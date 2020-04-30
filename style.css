@@ -11,6 +11,10 @@ main {
     color: #ffffff;
 }
 
+a {
+    color: #888888;    
+}
+
 h1 {
     font-size: 56px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +35,13 @@ h3 {
     font-style: italic;
     color: #888888;
 }
-
+h4 {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 8px;
+}
 .main-table {
     margin: 0 auto;
     background-color: silver;
